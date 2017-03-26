@@ -1,14 +1,15 @@
 # Another Star Wars Story
-Set up a web server.
+Set up a web server and disable directory listing.
 
 ## Question Text
 The Empire has once again built another Death Star. The Rebels have managed to gain access to the administrator controls. Shut it down before it destroys another planet!
 
-Hint: May the source be with you!
+Hint: May the Source be with you!
 
 ## Setup Guide
 1. Set up a web server.
 2. Dump all the files.
+3. Disable directory listing.
 
 ## How to Play
 Find the secret PIN to access the Death Star's controls and shut it down.
