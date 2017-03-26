@@ -1,0 +1,63 @@
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+h1 {
+    font-size: 6em;
+}
+
+.pinalert {
+    margin-top: 1em;
+    font-size: 1.3em;
+    display: none;
+}
+
+.whitetext {
+    color: white;
+}
+
+.pindiv {
+    margin-top: 8em;
+}
+
+.pininput {
+    margin-top: 3em;
+}
+
+#controlbuttons {
+    margin-top: 4em;
+}
+
+.controlbutton {
+    font-size: 4em;
+    margin-top: 1em;
+}
+
+.modal-header {
+    padding: 9px 15px;
+    border-bottom: 1px solid #eee;
+    background-color: #d9534f;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.modal-title {
+    color: white;
+}
+
+#rebootpane {
+    margin-top: 8em;
+}
+
+#shutdownpane {
+    margin-top: 5em;
+    background-color: #d9534f
+}
