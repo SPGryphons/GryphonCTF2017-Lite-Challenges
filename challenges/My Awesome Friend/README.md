@@ -23,11 +23,11 @@ Distribute all the contents inside `distrib` folder to the users.
 
 ## Solution
 1.  Download the .ppt and look for the password in it.
-  1. Go to slide 5, look at the image.
+    1. Go to slide 5, look at the image.
     (CLUE: GREAT MOMENTS AWAIT AROUND EVERY CORNER.THE FIRST PART IS "just".)
-  2. Go to slide 1, look at the bottom left corner of the slide.
+    2. Go to slide 1, look at the bottom left corner of the slide.
     (CLUE: BEHIND EVERY GREAT MEME IS A GREAT STORY. THE SECOND PART IS "do".)
-  3. Go to slide 3 , look behind the star image by moving it away.
+    3. Go to slide 3 , look behind the star image by moving it away.
     (CLUE: THE LAST PART IS "nothing".)
 
 2. Go to https://futureboy.us/stegano/decinput.html
