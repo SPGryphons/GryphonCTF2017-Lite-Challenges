@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Favorite Anime Character</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+    var val="YOU WILL NEVER FIND THE ANSWER";
+    $(document).ready(function(){
+      $("#send").click(function(){
+        val=$("#stuff").val();
+        if(val){
+          $.post("authenticate.php",{guess:val},function(data){
+            alert(data);
+          });
+        }
+
+      });
+    });
+    </script>
+
+    <style media="screen">
+      small{
+        font-size: 40%;
+        color:white;
+      }
+      img {
+        width: 20%;
+        height: 20%;
+      }
+    </style>
+  </head>
+  <body>
+      <div class="row">
+        <div class="col-xs-12 text-center text-success">
+            <h1> GUESS HIS FAVOURITE ANIME CHARACTER</h1><small>Starplatinum</small>
+            <!-- IF U SAW THIS U MUST KNOW WHATS HIS FAVOURTIE CHARACTER -->
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <img src="http://vignette3.wikia.nocookie.net/jjba/images/9/9b/SPTW_Key_Art.png/revision/latest?cb=20160515054430"/>
+        </div>
+        <div class="col-xs-12">
+          <div class="input-group">
+            <span class="input-group-addon">Your Guess:</span>
+            <input type="text" id="stuff" class="form-control" placeholder="I LOVE HEXXXXXX">
+          </div>
+          <br>
+            <div class="col-xs-12 text-center">
+              <button id="send" type="button" class="btn btn-primary">
+                Guessing
+              </button>
+            </div>
+        </div>
+      </div>
+  </body>
+</html>
