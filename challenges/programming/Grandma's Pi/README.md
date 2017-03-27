@@ -4,7 +4,7 @@ Brief information on how to set up this challenge
 ## Question Text
 Grandma baked me a pie but she wouldn't tell me what flavour it is. She said it was made with a dash of π and left me this note.
 
-Hint: Bac__G__a__r__con __a__o__n__n ips__d__ ipsum do__m__ip__a__psum...
+Hint: Bac**G**a**r**con **a**o**n**n ips**d** ipsum do**m**ip**a**psum...
 
 ## How to Play
 1. Find out the flavour of Grandma's pie.
