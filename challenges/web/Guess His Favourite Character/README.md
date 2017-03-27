@@ -19,4 +19,4 @@ Highlight the whole page and below the title a small text can be seen "Starplati
 In the input field the placeholder mentioned "I LOVE HEXXXXXX".
 Converting "Starplatinum" to hex would give you the flag.
 
-Flag is GCTF{G1t_Gud_M4T3}
+Flag is GCTF{D0NT_C4LL_M3_W33B}
