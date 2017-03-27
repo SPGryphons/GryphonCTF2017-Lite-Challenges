@@ -1,0 +1,3 @@
+[submodule "challenges/forensics/God of Darkness/lib/scallion"]
+	path = challenges/forensics/God of Darkness/lib/scallion
+	url = https://github.com/lachesis/scallion
