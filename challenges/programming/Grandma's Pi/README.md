@@ -13,7 +13,7 @@ Hint: Bac**G**a**r**con **a**o**n**n ips**d** ipsum do**m**ip**a**psum...
 Distribute all the contents inside `distrib` folder to the users.
 
 ## Solution
-The digits of Pi separate the hidden text.
+The digits of Pi separate the characters of the hidden text.
 
 Full hidden text: Grandma baked my favourite! A Lemon Meringue Pie! Wha.. What's this? There's a flag in the pie. GCTF{5UG4R_5P1C3_4ND_3V3RYTH1NG_N1C3}
 
