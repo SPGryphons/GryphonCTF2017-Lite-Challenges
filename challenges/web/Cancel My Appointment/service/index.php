@@ -3,6 +3,7 @@
 session_start();
 
 if (isset($_SESSION["LoginState"]) && $_SESSION["LoginState"] === True) {
+    $LoginState = True;
     $username = $_SESSION["Username"];
 
     if ($username === "potato") {

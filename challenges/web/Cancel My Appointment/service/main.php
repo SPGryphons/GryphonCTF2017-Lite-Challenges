@@ -1,3 +1,8 @@
+<?php
+if (!isset($LoginState) || $LoginState === False) {
+    header("Location: index.php");
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>

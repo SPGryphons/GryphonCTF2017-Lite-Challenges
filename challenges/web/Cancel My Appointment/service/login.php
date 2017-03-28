@@ -14,10 +14,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $username = $_POST["username"];
     $password = $_POST["password"];
 
+    //Vulnerable to SQL Injection, please exploit
     $sql = "SELECT username FROM users WHERE username='$username' AND password='$password'";
     $result = $conn->query($sql);
 
-    if ($result->num_rows > 0) {
+    if (!empty($result) && $result->num_rows > 0) {
         $row = $result->fetch_array();
 
         $_SESSION["LoginState"] = True;
