@@ -10,7 +10,7 @@ To make matters worse, there has been rumors that lay-offs would likely be comin
 
 After being mistreated for almost a year, you decide to preemptively seize the information in the companies' databases before your access is revoked and sell it off to make back the money they owed and as revenge to the company.
 
-You know the companies' SQL server is at port `8770` of `play.spgame.site` and you must use your username of `Technician` and password of `password` to get the data. You also heard there was an important piece of data in the table `operations` where column `index` is `2`. Time to get to work.
+You know the companies' MySQL server is at port `8770` of `play.spgame.site` and you must use your username of `Technician` and password of `password` to get the data. You also heard there was an important piece of data in the table `operations` where column `index` is `2`. Time to get to work.
 
 Created by ESLunarPhoenix
 
