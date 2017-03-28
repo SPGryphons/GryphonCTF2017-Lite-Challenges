@@ -12,7 +12,9 @@ However, the data is protected by a program the Agent was unable to break into.
 
 He has left the file in a remote, protected server along with an image file with an account.
 
-Your Job is to gain access to the server, find the file and extract the data protected by the program. Analysts has marked the server at port `8970` of `play.spgame.site`. Good Luck Agent.
+Your Job is to gain access to the server, find the file and extract the data protected by the program. Analysts have marked the server at port `8970` of `play.spgame.site`. Good Luck Agent.
+
+Created by ESLunarPhoenix
 
 ## Setup Guide
 1. Install Docker
@@ -21,8 +23,8 @@ Your Job is to gain access to the server, find the file and extract the data pro
 4. \* This Question will use port 8970
 
 ## How to Play
-Learn basic Linux commands(cd, ls, cat, ssh, ./)
-Learn basic python programming and use it to get the Flag
+1. Learn basic Linux commands(cd, ls, cat, ssh, ./)
+2. Learn basic python programming and use it to get the Flag
 
 ## Distribution
 An Image of an account and IP address
