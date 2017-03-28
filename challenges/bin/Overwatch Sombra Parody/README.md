@@ -10,7 +10,8 @@ Sombra is trying to show that she's the best **HACKERMAN** around but she needs 
 Distribute the file
 ## How to Play
 1. Modify the binary given
-2. Obtain the flag
+2. Use http://www.keystone-engine.org/ to find the hex need to modify the operations
+3. Obtain the flag
 
 ## Solution
  Use objdump -d on the binary provided.  
