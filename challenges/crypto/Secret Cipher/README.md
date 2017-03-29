@@ -3,6 +3,8 @@
 ## Question Text
 We found a text file containing some secret message. It is up to you to find out what it means!
 
+Creator: cyanoise
+
 Hint: There are two classical ciphers being used. The second one is a version that incorporates the first.
 
 ## How to Play

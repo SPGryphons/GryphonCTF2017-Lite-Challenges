@@ -4,6 +4,8 @@ Brief information on how to set up this challenge
 ## Question Text
 They say that there is a one in a million chance of winning the lottery. Well maybe you might win at your one millionth try.
 
+Creator: cyanoise
+
 ## How to Play
 1. Run the executable file.
 2. Win the lottery at your 1 millionth try.

@@ -4,6 +4,8 @@ Brief information on how to set up this challenge
 ## Question Text
 I made a PowerPoint presentation about my top 3 favourite movies.
 
+Creator: cyanoise
+
 ## How to Play
 1. Download the PowerPoint file.
 2. Find the flag in the file.

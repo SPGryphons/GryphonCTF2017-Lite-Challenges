@@ -8,6 +8,8 @@ Hint: I think it had something to do with privilege escalation.
 
 Flag format: GCTF{CVE-XXXX-XXXX}
 
+Creator: cyanoise
+
 ## How to Play
 Search for the CVE ID of the exploit.
 

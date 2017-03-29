@@ -6,6 +6,8 @@ The Empire has once again built another Death Star. The Rebels intercepted criti
 
 Hint: May the Source be with you!
 
+Creator: cyanoise
+
 ## Setup Guide
 1. Set up a web server.
 2. Place all the files.
