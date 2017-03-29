@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("#ping").click(function(){
+        var ip=$("#ip").val();
+        $.post("digger.php",{ip:ip},function(data){
+          $("#code").html("<code>"+data+"</code>");
+        });
+      });
+    });
+    </script>
+  </head>
+  <body style="background-color:grey">
+    <div class="row">
+      <div class="col-xs-12 text-center " style="color:orange">
+        <h1>Deathline75 Digger</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">
+      </div>
+      <div class="col-xs-6">
+        <div class="input-group">
+          <span class="input-group-addon">IPAddress</span>
+          <input id="ip" type="text" class="form-control" placeholder="ipaddress">
+          <span class="input-group-btn"><button id="ping" type="button" class="btn btn-success">
+            Dig
+          </button></span>
+        </div>
+      </div>
+    </div>
+    <div class="row" >
+      <div class="col-xs-3">
+
+      </div>
+      <div id="code" class="col-xs-6">
+      </div>
+
+
+    </div>
+  </body>
+</html>
