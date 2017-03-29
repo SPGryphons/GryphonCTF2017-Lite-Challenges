@@ -1,0 +1,13 @@
+service sample_service
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = inboxuser
+    bind        = 0.0.0.0
+    server      = /home/inboxuser/inbox-service
+    type        = UNLISTED
+    port        = 8555
+}
+
