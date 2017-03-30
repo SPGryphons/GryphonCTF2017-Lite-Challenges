@@ -58,7 +58,7 @@ namespace GCTFLite {
       if(flag){
         printFlag();
       }
-
+      Console.ReadLine();
     }
   }
 }
