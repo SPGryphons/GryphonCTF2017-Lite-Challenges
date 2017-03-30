@@ -2,7 +2,8 @@
 
 ## Question Text
 I love #polaroidcamz
-Creator: Optixal
+
+Creator by Optixal
 
 ## Setup Guide
 1. Create an Instagram account

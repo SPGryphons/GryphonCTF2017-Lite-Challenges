@@ -2,7 +2,8 @@
 
 ## Question Text
 A sleazy looking email popped up in your spam folder earlier today. Being tempted, you opened it and realized that the email is blank with no body and subject. The only information you have is the sender's email address `erebus@zipped.com`, and a file named `invitation.jpg` attached to the email.
-Creator: Optixal
+
+Creator by Optixal
 
 ## Setup Guide
 1. For the sake of immersiveness, use scallion to generate pub/priv key pair for custom onion url.
