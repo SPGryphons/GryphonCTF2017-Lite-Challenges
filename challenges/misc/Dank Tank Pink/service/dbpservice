@@ -1,0 +1,12 @@
+service dbp
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = dbp
+    bind        = 0.0.0.0
+    server      = /home/dbp/dankbankpink.py
+    type        = UNLISTED
+    port        = 65530
+}
