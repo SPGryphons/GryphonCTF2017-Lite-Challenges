@@ -1,0 +1,12 @@
+service kali
+{
+	disable = no
+	socket_type = stream
+	protocol = tcp
+	wait = no
+	user = kali
+	bind = 0.0.0.0
+	server = /home/kali/flag.py
+	type = unlisted
+	port = 13337
+}
