@@ -4,6 +4,8 @@ Distribute the file.
 ## Question Text
 A group of classy code artisans claimed that the best kind of security to programs is to not give any information of the program away. Security Through Obscurity, as they call it. They published a program with a secret hidden within it and no addition information as a proof of concept that it is completely safe and secure. They openly challenge everyone to crack the secret behind it. This is your time to shine and show them your 1337 skillz and prove them wrong.
 
+Creator: cyanoise
+
 ## How to Play
 Find the secret embedded into the program.
 

@@ -6,6 +6,8 @@ The web isn't as safe as you think. We monitored an unsecured web connection and
 
 Hint: Try filtering the junk connections and viewing only "http".
 
+Creator: cyanoise
+
 ## How to Play
 1. Start Kali virtual machine
 2. Open the pcap file in Wireshark
