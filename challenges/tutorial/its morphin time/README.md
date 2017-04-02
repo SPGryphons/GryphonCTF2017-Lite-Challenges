@@ -3,7 +3,9 @@ Brief information on how to set up this challenge
 
 ## Question Text
 Zordon used https://conv.darkbyte.ru/ to morph the flag into Base64, and then into Hexadecimal, and then into Binary.
-The results is stored into result.txt and your job is to decode it.
+
+The results is stored into result.txt and your job is to decode it.  
+
 Hint: Put the result into its corresponding field, hit Decode and you will get its previous encoding in the [TEXT] field. Rinse and repeat.
 
 ## Setup Guide
