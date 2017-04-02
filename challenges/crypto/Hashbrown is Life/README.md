@@ -2,7 +2,9 @@
 Brief information on how to set up this challenge
 
 ## Question Text
-https://md5db.net/ is delicious.
+Use http://md5decrypt.net/en/ to retrieve original texts and link them.
+
+Encapsulate the text with GCTF{...} to obtain the flag.
 
 ## Setup Guide
 1. Fill this in
@@ -17,10 +19,10 @@ https://md5db.net/ is delicious.
 Distribute all the contents inside `distrib` folder to the users.
 
 ## Solution
-1. Go to https://md5db.net/
+1. Go to http://md5decrypt.net/en/
 2. Open provided clue.txt and copy contents
-3. Paste into the field and click "Decrypt Hashes"/
-4. Get flag: GCTF{mcd0n4ld_h4s_b3st_h4shbr0wn5}
+3. Paste into the field and click "Decrypt"
+4. Get flag: GCTF{MCD0N4LDS_H4S_TH3_B35T_H45HBR0WN5}
 
 ## Recommended Reads
 Nothing
