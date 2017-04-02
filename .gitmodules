@@ -1,3 +1,6 @@
 [submodule "challenges/forensics/Erebus' Invitation/lib/scallion"]
 	path = challenges/forensics/Erebus' Invitation/lib/scallion
 	url = https://github.com/lachesis/scallion
+[submodule "challenges/tutorial/steganography/lib/textstego"]
+	path = challenges/tutorial/steganography/lib/textstego
+	url = https://github.com/cyanoise/textstego
