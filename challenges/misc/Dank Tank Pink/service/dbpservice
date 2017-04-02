@@ -8,5 +8,5 @@ service dbp
     bind        = 0.0.0.0
     server      = /home/dbp/dankbankpink.py
     type        = UNLISTED
-    port        = 65530
+    port        = 10007
 }

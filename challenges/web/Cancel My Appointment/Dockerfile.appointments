@@ -2,4 +2,8 @@ FROM mysql:latest
 RUN apt-get update
 RUN apt-get upgrade -y
 COPY ./generate/dump.sql /entrypoint-initdb.d/dump.sql
-COPY ./generate/dump.sql /tmp/dump.sql
+ADD ./generate/dump.sql /tmp/dump.sql
+ADD ./initialize.sh /tmp/initialize.sh
+
+#RUN mysql -u "root" -p "3amCode" < /tmp/dump.sql
+# Will need to go into the shell to manually import the .sql file cus idk why magik maybe huehue

@@ -11,11 +11,11 @@ Note, we have attached a copy of the source code used in the email program the a
 Created by Optixal
 
 ## Setup Guide
-1. Ensure port 8555 is available
+1. Ensure port 10004 is available
 2. Run `build.sh` in `distrib` folder to build docker img and run a container instance
 
 ## How to Play
-`nc play.spgame.site 8555`
+`nc play.spgame.site 10004`
 
 ## Distribution
 Distribute all the contents inside `distrib` folder to the users.

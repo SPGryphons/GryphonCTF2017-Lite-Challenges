@@ -1,4 +1,4 @@
-service sample_service
+service inboxservice
 {
     disable = no
     socket_type = stream
@@ -8,6 +8,6 @@ service sample_service
     bind        = 0.0.0.0
     server      = /home/inboxuser/inbox-service
     type        = UNLISTED
-    port        = 8555
+    port        = 10004
 }
 

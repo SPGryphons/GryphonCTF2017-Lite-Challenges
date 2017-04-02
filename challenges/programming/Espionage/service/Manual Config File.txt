@@ -1,3 +1,6 @@
+# QR -- This file is no longer needed. I think.
+
+
 chsh Infiltrator
 #/usr/bin/lshell
 

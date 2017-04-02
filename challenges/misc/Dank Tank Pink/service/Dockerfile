@@ -9,5 +9,5 @@ RUN chmod +x /home/dbp/dankbankpink.py
 COPY ./dbpservice /etc/xinetd.d/dbpservice
 RUN chown -R root:dbp /home/dbp
 RUN chmod -R 750 /home/dbp
-EXPOSE 9999
+EXPOSE 10007
 CMD ["/usr/sbin/xinetd", "-d"]
