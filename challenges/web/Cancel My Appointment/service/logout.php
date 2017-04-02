@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-if (isset($_SESSION["LoginState"]) && $_SESSION["LoginState"] == True) {
+if (isset($_SESSION["LoginState"]) && $_SESSION["LoginState"]) {
     session_unset();
     $_SESSION["LogoutState"] = True;
 } else {

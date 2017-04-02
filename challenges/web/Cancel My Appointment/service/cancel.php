@@ -1,15 +1,15 @@
 <?php
 
+session_start();
+
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
-    session_start();
-
-    if (isset($_SESSION["LoginState"]) && $_SESSION["LoginState"] === True) {
+    if (isset($_SESSION["LoginState"]) && $_SESSION["LoginState"]) {
 
         //Safeguards against manually fired POST requests (E.g. cURL).
         if ($_POST["verify"] === $_SESSION["Nonce"]) {
             echo "<h2>Appointment cancelled!</h2><br>";
-            echo "GCTF{4N_1NJ3C710N_4_D4Y_K33P5_7H3_V1RU5_4W4Y}";
+            echo "GCTF{4N_1NJ3C710N_4_D4Y_G1V35_7H3_FL46_4W4Y}";
             session_unset();
             session_destroy();
         } else {
@@ -19,7 +19,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         header("Location: index.php");
     }
 } else {
-    header("Location: index.php");
+    if (isset($_SESSION["LoginState"]) && $_SESSION["LoginState"]) {
+        echo "<h1>Sorry forced browsing does not work :(</h1>";
+        echo "<h3>Try something else.</h3>";
+    } else {
+        header("Location: index.php");
+    }
 }
 
 ?>

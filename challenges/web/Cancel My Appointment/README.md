@@ -4,7 +4,11 @@ Requires PHP web server and a MySQL Database.
 ## Question Text
 I just found out I wouldn't be free for my injection appointment at the hospital! Could you help me cancel my appointment?
 
-My username is potato, my password is.... Ah I think you'll find a way in without it, right?
+My username and password is.... Ah I think you'll find a way in without it, right?
+
+The hospital website is at http://play.spgame.site:10002
+
+Creator: zxlim
 
 ## Setup Guide
 1. Set up a PHP web server and MySQL Database.
@@ -23,4 +27,4 @@ Once in, click on "View All Appointments" button.
 Using your browser's developer tools, remove the attribute "disabled" from the "Cancel" button element.
 Finally, click the button and you will get the flag.
 
-Flag: GCTF{4N_1NJ3C710N_4_D4Y_K33P5_7H3_V1RU5_4W4Y}
+Flag: GCTF{4N_1NJ3C710N_4_D4Y_G1V35_7H3_FL46_4W4Y}

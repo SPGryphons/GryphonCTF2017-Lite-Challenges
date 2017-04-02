@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 $alert = "";
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -11,6 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         die("Connection failed: " . $conn->connect_error);
     }
 
+    $loginState = False;
     $username = $_POST["username"];
     $password = $_POST["password"];
 
@@ -21,24 +24,35 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if (!empty($result) && $result->num_rows > 0) {
         $row = $result->fetch_array();
 
+        $loginState = True;
         $_SESSION["LoginState"] = True;
         $_SESSION["Username"] = $row["username"];
         $_SESSION["Nonce"] = bin2hex(random_bytes(16));
-        header("Location: index.php");
     } else {
         $alert = "<div class='alert alert-danger'>Invalid credentials.</div>";
         session_unset();
         session_destroy();
     }
 
-} else {
-    if (isset($_SESSION["LogoutState"]) && $_SESSION["LogoutState"] === True) {
-        $alert = "<div class='alert alert-success'>You have successfully logged out.</div>";
-    } else {
-        $alert = "<div class='alert alert-info'>Please login to continue.</div>";
+    if (isset($result)) {
+        $result->close();
     }
 
-    if (session_status() === PHP_SESSION_ACTIVE) {
+    $conn->close();
+
+    if ($loginState) {
+        header("Location: index.php");
+    }
+
+} else {
+    if (isset($_SESSION["LoginState"]) && $_SESSION["LoginState"]) {
+        header("Location: index.php");
+    } else if (isset($_SESSION["LogoutState"]) && $_SESSION["LogoutState"]) {
+        $alert = "<div class='alert alert-success'>You have successfully logged out.</div>";
+        session_unset();
+        session_destroy();
+    } else {
+        $alert = "<div class='alert alert-info'>Please login to continue.</div>";
         session_unset();
         session_destroy();
     }
@@ -62,7 +76,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <div class="pre-jumbotron">
             <?php if(isset($alert)) echo $alert ?>
             <div class="jumbotron">
-                <form action="index.php" method="post" autocomplete="off">
+                <form action="login.php" method="post" autocomplete="off">
                     <div class="field-wrap">
                         <label for="staffID">Username:</label>
                         <div class="input-field">

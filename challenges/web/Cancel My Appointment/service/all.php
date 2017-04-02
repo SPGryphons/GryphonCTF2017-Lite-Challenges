@@ -2,7 +2,7 @@
 
 session_start();
 
-if (isset($_SESSION["LoginState"]) && $_SESSION["LoginState"] === True) {
+if (isset($_SESSION["LoginState"]) && $_SESSION["LoginState"]) {
     $username = $_SESSION["Username"];
 } else {
     header("Location: index.php");
