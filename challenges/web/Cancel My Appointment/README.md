@@ -11,7 +11,7 @@ My username is potato, my password is.... Ah I think you'll find a way in withou
 3. Import dump.sql located inside `generate` folder to your database.
 3. Place all the files in the `service` folder to web root.
 4. Modify the variables defined in `includes/constants.php` according to your database setting.
-
+5. In the docker container, import the sql file at /tmp and set the permissions correctly for the db user.
 ## How to Play
 Log into the application and cancel the user's appointment.
 

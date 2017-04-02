@@ -1,0 +1,5 @@
+FROM mysql:latest
+RUN apt-get update
+RUN apt-get upgrade -y
+COPY ./generate/dump.sql /entrypoint-initdb.d/dump.sql
+COPY ./generate/dump.sql /tmp/dump.sql
