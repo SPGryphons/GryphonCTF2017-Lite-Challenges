@@ -3,15 +3,10 @@
 import sys
 from random import sample
 
-def write(data, sep="\n"):
-	sys.stdout.write(data + sep)
-	sys.stdout.flush()
-
 decoder=[]
 CTF_Flag=[]
 
-write("Access Code Please ==> ", "")
-UserInput = raw_input()
+UserInput = raw_input("Access Code Please ==> ")
 
 a="3"
 b="^"
@@ -39,9 +34,10 @@ w="n"
 x="'"
 y="a"
 z="s"
+var=" "
 
 scrambled=e+a+d+j+b+i+m+b+f+g+c+m+f+g+b+a+h+k+l+i
-AccessCode=n+z+w+x+p+" "+p+o+n+i+" "+t+y+s+q
+AccessCode=n+z+w+x+p+var+p+o+n+i+var+t+y+s+q
 
 if UserInput==AccessCode:
 	for c in scrambled:
@@ -52,6 +48,4 @@ else:
 		decoder.append(c)
 
 CTF_Flag=''.join(decoder)
-write("GCTF{"+CTF_Flag+"}")
-#print "d34x^s/^c2b/c2^30fgs"
-#print "e45y_t0_d3c0d3_41ght"
+print "GCTF{"+CTF_Flag+"}"
