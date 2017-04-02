@@ -1,4 +1,4 @@
-## Deathline75 's digger
+## Dank Tank Pink
 
 Setup the socket and distribute the files
 
