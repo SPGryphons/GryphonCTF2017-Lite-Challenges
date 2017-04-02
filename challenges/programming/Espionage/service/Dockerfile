@@ -4,7 +4,7 @@ RUN dpkg --add-architecture i386
 RUN apt-get update
 RUN apt-get install -y openssh-server lshell
 RUN mkdir /var/run/sshd
-RUN cp /etc/ssh/sshd_config /etc/ssh/sshd_config.factory-defaults
+RUN sed -i.factory-defaults -e 's/#PasswordAuthentication.*/PasswordAuthentication yes/' /etc/ssh/sshd_config
 RUN chmod a-w /etc/ssh/sshd_config.factory-defaults
 RUN sed -i 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' /etc/pam.d/sshd
 RUN useradd -m $user

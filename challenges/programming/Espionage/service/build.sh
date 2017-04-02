@@ -1,5 +1,4 @@
 #!/bin/bash
-# Sample run and build docker script
 
 SERVICE="proprietaryinfo"
 PORT=10003

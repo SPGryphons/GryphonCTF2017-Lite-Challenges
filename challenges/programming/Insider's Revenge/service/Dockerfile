@@ -1,13 +1,8 @@
 FROM mysql:5.7
 
 ENV MYSQL_DATABASE=gctfdb
-ENV MYSQL_ROOT_PASSWORD=GryphonCTFLite
+ENV MYSQL_ROOT_PASSWORD=VCS123Y414LRPDH325UNE523HQ
 
-ENV MYSQL_USER=sam
-ENV MYSQL_PASSWORD=1234
-
-COPY ./runme.sh /runme.sh
-RUN chmod 754 /runme.sh
-COPY ./sqlstatements /sqlstatements
+COPY ./dump.sql /docker-entrypoint-initdb.d/dump.sql
 
 EXPOSE 3306

@@ -1,2 +1,0 @@
-Login into the mysql container
-Run the runme.sh script

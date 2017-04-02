@@ -1,5 +1,4 @@
 #!/bin/bash
-# Sample run and build docker script
 
 SERVICE="sqlserver"
 PORT=10005
