@@ -19,6 +19,3 @@ Crack mania.txt with john the ripper using the provided password.lst as the word
 `john --wordlist=password.lst mania.txt`
 
 Flag: GCTF{L1K3_F1ND1N6_4_N33DL3_1N_4_H4Y574CK}
-
-## Recommended Reads
-Nothing
