@@ -1,4 +1,4 @@
-## Cyanoise 's python'
+## Cyanoise 's python
 
 Set up the socket
 
