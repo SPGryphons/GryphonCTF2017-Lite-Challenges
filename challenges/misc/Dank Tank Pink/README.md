@@ -83,4 +83,4 @@ $r=$adder=$minuser=0
 }
 ```
 5. Make a socket connection and manually input 10 licenses and the flag will be shown
-Flag is GCTF{D4NK_B4NK_P1N}
+Flag is GCTF{JU57_473_D1NN3R_73571N6_Y0U_0NLY}

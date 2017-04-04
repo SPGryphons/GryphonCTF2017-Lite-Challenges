@@ -41,4 +41,4 @@ while i!=10 and flag:
     console_out(msg)
     i=i+1
 if i==10 and flag:
-    print "GCTF{D4NK_B4NK_P1N}"
+    print "GCTF{JU57_473_D1NN3R_73571N6_Y0U_0NLY}"
