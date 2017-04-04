@@ -34,10 +34,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         session_destroy();
     }
 
-    if (isset($result)) {
-        $result->close();
-    }
-
     $conn->close();
 
     if ($loginState) {

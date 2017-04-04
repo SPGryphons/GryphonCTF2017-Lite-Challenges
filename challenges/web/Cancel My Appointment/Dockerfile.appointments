@@ -7,3 +7,7 @@ ADD ./initialize.sh /tmp/initialize.sh
 
 #RUN mysql -u "root" -p "3amCode" < /tmp/dump.sql
 # Will need to go into the shell to manually import the .sql file cus idk why magik maybe huehue
+
+RUN mysql -u root -p3amCode < /tmp/dump.sql
+RUN mysql -u root -p3amCode -e "GRANT SELECT ON myappointments.* TO 'myappointments'@'localhost' IDENTIFIED BY 'myappointmentsDB';"
+#Cuz this is how you do it lelelel
