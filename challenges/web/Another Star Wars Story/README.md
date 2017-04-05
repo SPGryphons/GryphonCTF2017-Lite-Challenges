@@ -4,7 +4,7 @@ Set up a web server and disable directory listing.
 ## Question Text
 The Empire has once again built another Death Star. The Rebels intercepted critical information and have managed to gain access to the administrator console. You have been tasked to shut down the Death Star before it destroys another planet!
 
-The console is at https://play.spgame.site:10000/.
+The console is at http://play.spgame.site:10000/.
 
 Hint: May the Source be with you!
 
