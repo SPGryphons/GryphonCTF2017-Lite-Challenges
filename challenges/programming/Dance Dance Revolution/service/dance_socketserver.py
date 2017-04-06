@@ -4,7 +4,7 @@ import socket
 import threading
 
 HOST = '0.0.0.0'
-PORT = 15000
+PORT = 10011
 TIMEOUT = 3.0
 BUFF_SIZE = 1024
 
