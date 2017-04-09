@@ -4,6 +4,8 @@ Start python socket server.
 ## Question Text
 Aw snap... Our key exchange client program has been corrupted. Luckily we have a backup plan. There is a manual key exchange server located at `nc play.spgame.site 20000`.
 
+Created by cyanoise
+
 ## Setup Guide
 1. Modify port number
 2. Start python socket server
