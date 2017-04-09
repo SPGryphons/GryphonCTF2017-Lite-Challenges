@@ -1,14 +1,15 @@
 # Done In A Diffie
-Start python socket server.
+Pip install Start python socket server.
 
 ## Question Text
-Aw snap... Our key exchange client program has been corrupted. Luckily we have a backup plan. There is a manual key exchange server located at `nc play.spgame.site 20000`.
+Aw snap... Our key exchange client program has been corrupted. Luckily we have a backup plan. There is a manual key exchange server located at `nc play.spgame.site 10012`.
 
 Created by cyanoise
 
 ## Setup Guide
-1. Modify port number
-2. Start python socket server
+1. Intstall PyCryptoDome for python 3 (pip3 install pycryptodomex / python3 -m pip install pycryptodomex)
+2. Modify port number
+3. Start python socket server
 
 ## Solution
 1. Perform Diffie-Hellman Key Exchange with server.
