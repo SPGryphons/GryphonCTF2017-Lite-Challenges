@@ -4,4 +4,3 @@ COPY ./service /var/www/html/
 RUN chown root:root -R /var/www/html/
 RUN chmod 755 /var/www/html/
 RUN chmod 444 /var/www/html*
-RUN chattr +i /var/www/html/*
