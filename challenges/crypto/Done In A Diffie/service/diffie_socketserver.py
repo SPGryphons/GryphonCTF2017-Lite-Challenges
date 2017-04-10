@@ -9,7 +9,7 @@ from Cryptodome.Cipher import AES
 from Cryptodome.Util import Padding
 
 HOST = '0.0.0.0'
-PORT = 20000
+PORT = 10012
 TIMEOUT = 30.0
 BUFF_SIZE = 4096
 
