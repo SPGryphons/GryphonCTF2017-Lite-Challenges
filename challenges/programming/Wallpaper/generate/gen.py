@@ -6,7 +6,7 @@ from PIL import Image
 designLocation = "design.txt"
 blankImgLocation = "blank.png"
 zipLocation = "wallpaper.zip"
-distribLocation = "wallpaper_qrs.png"
+outputLocation = "wallpaper_qrs_output.png"
 
 design = [line.strip().split(',') for line in open(designLocation, 'r')]
 design = [[int(i) for i in line] for line in design]
@@ -33,4 +33,4 @@ for row in range(len(design)):
             with Image.open(blankImgLocation) as blankImg:
                 canvas.paste(blankImg, (col * width, row * width))
 
-canvas.save(distribLocation)
+canvas.save(outputLocation)

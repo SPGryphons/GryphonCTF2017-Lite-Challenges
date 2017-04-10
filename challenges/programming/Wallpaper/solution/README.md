@@ -1,3 +1,5 @@
 ## Solution Files
 
-This folder is to include the scripts or files to demonstrate the solution.
+Requires zbarlight library installed: `pip install zbarlight`
+
+Requires PIL library installed: `pip install pillow`
