@@ -2,7 +2,7 @@
 Brief information on how to set up this challenge
 
 ## Question Text
-Psst, wanna here this amazing ketchup recipe i got here?
+Psst, wanna hear this amazing ketchup recipe i got here?
 
 ## How to Play
 1. Download the file and have fun
