@@ -4,6 +4,8 @@ Set up apache server with PHP.
 ## Question Text
 There is this level-based mini web game. I got halfway through and couldn't go any further so I gave up. Can you do better? Game is at http://play.spgame.site:10014/
 
+Creator: cyanoise
+
 ## Setup Guide
 1. Install Apache2 server
 2. Install PHP
