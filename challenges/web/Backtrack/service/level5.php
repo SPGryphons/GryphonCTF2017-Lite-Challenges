@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <title>Level 4</title>
+    <title>Level 1</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
@@ -28,31 +28,35 @@
 </head>
 
 <body>
-<body>
 <div class="container">
     <div class="row">
         <div class="jumbotron text-center">
-            <h1>Level 4</h1>
+            <h1 class="text-center">Level 5</h1>
             <?php
-            if ($_SESSION["level3success"] == null) {
+            if ($_SESSION["level3success"] == null || $_SESSION["level4success"] == null) {
                 ?>
-                <p>The flag isn't here.</p>
-                <p>Go to level 3 first!</p>
+                <p>Come back when you have completed the lower levels.</p>
                 <?php
-            } else if ($_SESSION["level3success"] == true) {
-                if (preg_match("/Android 10.11.12/", $_SERVER["HTTP_USER_AGENT"]) == 1 &&
-                    preg_match("/Chrome\/[.0-9]* Mobile/", $_SERVER["HTTP_USER_AGENT"]) == 1
+            } else if ($_SESSION["level3success"] == true && $_SESSION["level4success"] == true) {
+                $show_cookie_monster = true;
+                if (!isset($_COOKIE["time"])) {
+                    // Set cookie with time now and expire in a day. Value in seconds.
+                    setcookie("time", time(), time() + (60 * 60), "/");
+                } else if (preg_match("/^[0-9]+$/", $_COOKIE["time"]) == 1 &&
+                    (int)$_COOKIE["time"] >= 33040137600
                 ) {
-                    $_SESSION["level4success"] = true;
+                    $show_cookie_monster = false;
                     ?>
-                    <h2>You are almost at the flag!</h2>
-                    <p>Move on to level 5.</p>
+                    <h2>You have completed the trials!</h2>
+                    <p>GCTF{F4K3_17_71LL_Y0U_M4K3_17}</p>
                     <?php
-                } else {
+                }
+
+                if ($show_cookie_monster) {
                     ?>
-                    <h2>Unsupported browser</h2>
-                    <p>Sorry, we can only support phones running Android Version 10.11.12 accessing with Chrome
-                        browser.</p>
+                    <p>The flag will only show itself in the year 3017!</p>
+                    <p>In the meantime, have a cookie!</p>
+                    <img src="images/cookiemonster.jpg">
                     <?php
                 }
             }
@@ -64,4 +68,5 @@
 <script src="lib/jquery-3.1.1.min.js"></script>
 <script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>

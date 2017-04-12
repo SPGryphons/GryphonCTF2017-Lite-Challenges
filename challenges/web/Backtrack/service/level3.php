@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,21 +28,25 @@
 </head>
 
 <?php
-if ($_SERVER["HTTP_REFERER"] != "http://play.spgame.site:10014/level4.php") {
+if (strpos($_SERVER["HTTP_REFERER"], "play.spgame.site:10014/level0.php") !== false) {
     ?>
     <script>
-        alert("Sorry. You can only come from level 4.");
+        alert("Sorry. You can only come from level 0.");
         window.location.replace("level1.php");
     </script>
 <?php
 } else {
+// Set session variable to move on to next part
+$_SESSION["level3success"] = true;
 ?>
     <body>
     <div class="container">
         <div class="row">
             <div class="jumbotron text-center">
                 <h1>Level 3</h1>
-                <h2>GCTF{7H3_R3F_41N7_607_N07H1N6_0N_Y0U}</h2>
+                <p>Well done but these aren't the flags you are looking for.</p>
+                <p>Continue to level 4!</p>
+                <img src="images/worldflags.jpg">
             </div>
         </div>
     </div>
