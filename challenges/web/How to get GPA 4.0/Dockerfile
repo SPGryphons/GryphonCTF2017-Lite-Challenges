@@ -4,5 +4,6 @@ RUN apt-get upgrade -y
 COPY ./var/gpa_secret /var/gpa_secret/
 COPY ./service /var/www/html/
 RUN chmod 111 /var/gpa_secret -R
+RUN chmod 555 /var/gpa_secret
 RUN chmod 111 /var/www/html/passwd
 EXPOSE 80
