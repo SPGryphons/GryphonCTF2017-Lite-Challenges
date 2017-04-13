@@ -30,15 +30,6 @@
 <?php
 if (strpos($_SERVER["HTTP_REFERER"], "play.spgame.site:10014/level0.php") !== false) {
     ?>
-    <script>
-        alert("Sorry. You can only come from level 0.");
-        window.location.replace("level1.php");
-    </script>
-<?php
-} else {
-// Set session variable to move on to next part
-$_SESSION["level3success"] = true;
-?>
     <body>
     <div class="container">
         <div class="row">
@@ -54,6 +45,15 @@ $_SESSION["level3success"] = true;
     <script src="lib/jquery-3.1.1.min.js"></script>
     <script src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     </body>
+<?php
+} else {
+// Set session variable to move on to next part
+$_SESSION["level3success"] = true;
+?>
+    <script>
+        alert("Sorry. You can only come from level 0.");
+        window.location.replace("level1.php");
+    </script>
     <?php
 }
 ?>

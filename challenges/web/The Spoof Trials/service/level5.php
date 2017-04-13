@@ -1,4 +1,11 @@
-<?php session_start(); ?>
+<?php
+session_start();
+
+if (!isset($_COOKIE["time"])) {
+    // Set cookie with time now and expire in a day. Value in seconds.
+    setcookie("time", time(), time() + (60 * 60), "/");
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -38,21 +45,14 @@
                 <p>Come back when you have completed the lower levels.</p>
                 <?php
             } else if ($_SESSION["level3success"] == true && $_SESSION["level4success"] == true) {
-                $show_cookie_monster = true;
-                if (!isset($_COOKIE["time"])) {
-                    // Set cookie with time now and expire in a day. Value in seconds.
-                    setcookie("time", time(), time() + (60 * 60), "/");
-                } else if (preg_match("/^[0-9]+$/", $_COOKIE["time"]) == 1 &&
+                if (preg_match("/^[0-9]+$/", $_COOKIE["time"]) == 1 &&
                     (int)$_COOKIE["time"] >= 33040137600
                 ) {
-                    $show_cookie_monster = false;
                     ?>
                     <h2>You have completed the trials!</h2>
                     <p>GCTF{F4K3_17_71LL_Y0U_M4K3_17}</p>
                     <?php
-                }
-
-                if ($show_cookie_monster) {
+                } else {
                     ?>
                     <p>The flag will only show itself in the year 3017!</p>
                     <p>In the meantime, have a cookie!</p>
