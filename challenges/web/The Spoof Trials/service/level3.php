@@ -29,6 +29,8 @@
 
 <?php
 if (strpos($_SERVER["HTTP_REFERER"], "play.spgame.site:10014/level0.php") !== false) {
+    // Set session variable to move on to next part
+    $_SESSION["level3success"] = true;
     ?>
     <body>
     <div class="container">
@@ -47,8 +49,6 @@ if (strpos($_SERVER["HTTP_REFERER"], "play.spgame.site:10014/level0.php") !== fa
     </body>
 <?php
 } else {
-// Set session variable to move on to next part
-$_SESSION["level3success"] = true;
 ?>
     <script>
         alert("Sorry. You can only come from level 0.");
