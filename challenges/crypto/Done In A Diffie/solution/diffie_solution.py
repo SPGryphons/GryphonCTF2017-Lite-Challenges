@@ -7,7 +7,7 @@ import socket
 from Cryptodome.Cipher import AES
 
 # Config
-HOST = 'localhost'
+HOST = 'play.spgame.site'
 PORT = 10012
 BUFF_SIZE = 4096
 
@@ -39,7 +39,7 @@ def main():
             elif "Your computed value" in line:
                 a = random.randint(2, p - 2)
                 A = pow(g, a, p)
-                print("a : {}", "A : {}".format(a, A))
+                print("a : {} A : {}".format(a, A))
                 clientsocket.sendall("{}".format(A).encode())
             elif "Server computed value" in line:
                 B = int(line.split(":")[1].strip())
