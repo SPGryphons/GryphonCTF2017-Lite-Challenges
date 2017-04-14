@@ -37,7 +37,7 @@ i=0
 flag=True
 while i!=10 and flag:
     license=console_in("Please enter a unique license:\n")
-    msg,flag=checker(license,stuff)
+    msg,flag=checker(license.strip(),stuff)
     console_out(msg)
     i=i+1
 if i==10 and flag:

@@ -17,7 +17,7 @@ int algorithm(string text){
     add+=int(first[i]);
   }
   for (int i =0; i< second.length();i++){
-    minus+=int(first[i]);
+    minus+=int(second[i]);
   }
   return add-minus;
 }
