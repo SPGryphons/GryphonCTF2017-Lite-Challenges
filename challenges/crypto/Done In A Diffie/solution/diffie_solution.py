@@ -4,11 +4,11 @@ import hashlib
 import random
 import socket
 
-# Config
 from Cryptodome.Cipher import AES
 
-HOST = 'play.spgame.site'
-PORT = 20000
+# Config
+HOST = 'localhost'
+PORT = 10012
 BUFF_SIZE = 4096
 
 
@@ -50,11 +50,11 @@ def main():
 
     clientsocket.close()
 
-    shared_key_int = pow(B, a, p)
+    shared_key = pow(B, a, p)
 
     # Hash shared key as 16 byte/128 bit input for AES.
     md5_hasher = hashlib.md5()
-    md5_hasher.update((shared_key_int).to_bytes((shared_key_int.bit_length() + 7) // 8, "big"))
+    md5_hasher.update(str(shared_key).encode())
     key_hash_bytes = md5_hasher.digest()
 
     # Generate AES 128 ECB cipher

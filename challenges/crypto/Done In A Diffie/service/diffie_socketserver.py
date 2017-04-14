@@ -69,11 +69,11 @@ def handler(conn, addr):
         conn.sendall("Server computed value : {}\n\n".format(B).encode())
 
         # Generate shared key
-        shared_key_int = pow(A, b, p)
+        shared_key = pow(A, b, p)
 
         # Hash shared key as 16 byte/128 bit input for AES.
         md5_hasher = hashlib.md5()
-        md5_hasher.update((shared_key_int).to_bytes((shared_key_int.bit_length() + 7) // 8, "big"))
+        md5_hasher.update(str(shared_key).encode())
         key_hash_bytes = md5_hasher.digest()
 
         # Generate AES 128 ECB cipher
@@ -86,7 +86,7 @@ def handler(conn, addr):
         base64_flag = base64.b64encode(encrypted_flag).decode()
 
         conn.sendall(
-            "Digest the shared key with MD5 to build an AES-128-ECB key to decrypt the following base64 encoded message:\n"
+            "Digest the string of the shared key to MD5 bytes to build an AES-128-ECB-PKCS7 key to decrypt the following base64 encoded message:\n"
             "{}\n".format(base64_flag).encode()
         )
     except socket.timeout:
